@@ -52,3 +52,18 @@ ol.appendChild(li3)
 
 headers.appendChild(article)
 headers.appendChild(ol)
+
+
+// set multi way to innerText Directly
+//const headertype =document.getElementById('header-item');
+const sectionDress =document.createElement('section');
+sectionDress.innerHTML = `
+<h2>It is multi way section</h2>
+<ol> 
+<li>fruits</li>
+<li>Tomato</li>
+<li>carot</li>
+<li>vendi</li>
+</ol>
+`
+headers.appendChild(sectionDress)
