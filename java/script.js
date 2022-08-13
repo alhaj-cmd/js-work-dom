@@ -26,4 +26,29 @@ add.innerText  = 'ami bondhu sada sala';
 //where do the set
 
 const ul  = document.getElementById('added')
-ul.appendChild(add)
+ul.appendChild(add);
+
+// where to add
+const headers =document.getElementById('header-item');
+//console.log(headers)
+
+const article =document.createElement('article');
+// const h1.innerText = 'This is header';
+const h1 =document.createElement('h1');
+h1.innerText = 'This is header';
+article.appendChild(h1);
+
+const ol = document.createElement('ol')
+const li1 =document.createElement('li')
+li1.innerText='ajke muri khaw'
+ol.appendChild(li1)
+const li2 =document.createElement('li')
+li2.innerText='ajke mango khaw'
+ol.appendChild(li2)
+const li3 =document.createElement('li')
+li3.innerText='ajke chatu khaw'
+ol.appendChild(li3)
+
+
+headers.appendChild(article)
+headers.appendChild(ol)
